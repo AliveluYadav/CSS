@@ -1,0 +1,65 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button type="submit" onclick="document.write(5 + 6)"> write</button>
+        <button type="submit" onclick="window.alert(5 + 6)">alert </button>
+        <button type="submit" onclick="console.log(5 + 6)"> Console</button>
+
+    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    
+        <script>
+            function sum(){
+            var num1 = 5;
+            var num2 = 10;
+            var sum = num1+num2; 
+            document.getElementById("sum").innerHTML = sum
+            }
+            
+            
+            function displaArray(){
+                var names = ["one","2","df","dfsd","dsf","sfd","dsf","dsf","sfs"]
+                var carDetails = {type:"faadf",speed:"500",model:"2344"}
+                var x = "nbn jdjhj jdfjd is called \"jfskgj\""
+                var person = {
+                    firstName: "John",
+                    lastName : "Doe",
+                    id :5566,
+                    fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                                                                                           }
+                                                                                           };
+                
+             //for (var i=0;i<=names.length;i++){ 
+         document.getElementById("loop").innerHTML = names;
+//       document.getElementById("simple").innerHTML = "car speed is :" + carDetails.speed + "kmph"
+//       document.getElementById("simple").innerHTML = person.fullName(); 
+                
+         document.getElementById("simple").innerHTML = x;
+
+      //}
+                           
+      }
+
+      </script>
+    </head>
+        <body>
+            <p id="sum">click below button to get the sum</p>
+            <button type="submit" onclick="sum()">Click Me</button>
+            <p id="loop">for loop for display Array</p>
+            <p id="simple"> objects </p>
+            <button type="submit" onclick="displaArray()">Array</button>
+        </body></html>
+
+
+
+

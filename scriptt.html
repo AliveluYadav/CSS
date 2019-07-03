@@ -1,0 +1,48 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <div>
+        <button type="submit" onclick="document.getElementById('click').innerHTML = Date()" value="Submit"> Click here to get date  </button>
+         <p id="click"> Hello Java Script </p>
+    </div>
+    
+     <button type="submit" onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light </button>
+     <img id="myImage" src="images/pic_bulboff.gif" width="100" height="150">
+     <button type="submit" onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light </button>
+    
+    </body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function clickOn()
+            {
+                var text=document.getElementById("mtBtn").innerHTML;
+                
+                if(text === "Turn on the light")
+                   {
+        document.getElementById('myImage').src = 'images/pic_bulbon.gif';
+        document.getElementById("mtBtn").innerHTML = "Turn off the light";       
+            }
+         else {
+               
+        document.getElementById('myImage').src = 'images/pic_bulboff.gif';
+        document.getElementById("mtBtn").innerHTML = "Turn on the light"; 
+            }
+
+            }
+        </script>
+    </head>
+        <body>
+     <img id="myImage" src="images/pic_bulboff.gif" width="100" height="150">
+     <button id="mtBtn" type="submit" onclick="clickOn()">Turn on the light</button>
+
+        </body>
+</html>

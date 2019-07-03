@@ -1,0 +1,212 @@
+<!--
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <p> Please enter 5 to 10 </p>
+        <input type="text" id="demo">
+        <button onclick="myFunction()">Click Here</button>
+        <p id="demo1"></p>
+        <p id="call"></p>
+    </body>
+    
+    <script>
+        
+        
+    function myFunction()
+        {
+           var message,x;
+            message=document.getElementById("demo1")
+            x=document.getElementById("demo").value
+try {
+    
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x=Number(x)
+    if(x<5) throw "is low"
+    if(x>10) throw "is high"
+}            
+catch(err)
+    {
+    message.innerHTML = "Input is" + err;     
+    }
+      }
+    </script>
+    
+    <script>
+     var person1 =
+    { fullName:function()
+     {
+         return this.fName+" "+this.lName;
+     }
+         
+     }
+     
+     var person2 =
+    {
+     fName:"Alivelu",
+     lName:"ravula"
+     }
+    
+    document.getElementById("call").innerHTML = person1.fullName.call(person2); 
+     
+    </script>
+</html>
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+    <body>
+    
+        <style>
+            body {
+/*                background-color: aqua;*/
+               background-image: url(images/backImg.jpg)
+            }
+        </style>
+    
+        <button onclick="parssee()">submit</button>
+        <p id="demo">display fullname here</p>
+        
+        <script>
+            function parssee()
+            {
+              
+  var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+                
+              var obj = JSON.parse(text);
+//            var obj = {firstName:"Alivelu", lastName:"Ravula", age:"25"}
+//            var myJson = JSON.stringify(obj)
+           document.getElementById("demo").innerHTML = obj.employees[1].firstName+" "+obj.employees[1].lastName;
+              
+            }
+        
+        </script>
+    </body>
+</html>
+-->
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+    <head>
+           <script>
+           function FormSubmit()
+            {
+               
+                var x = document.forms["myForm"]["frstName"].value;
+                
+                if(x == "")
+                    {
+                        alert("textfield should not be empty");
+                    }
+                else{
+                    
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+     
+       
+<form name="myForm" action="https://www.quackit.com/html/codes/html_background_image_codes.cfm" onsubmit="return FormSubmit()" method="post">
+            Name:<input type="text" name="frstName">
+                 <input type="submit" value="Submit">        
+        </form>
+    </body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <input id="num" type="text">
+        <button onclick="myFunction()"> Click Here</button>
+        <p id="par"> Display output here  </p>
+        
+        <script>
+        function myFunction()
+            {
+                var x,text;
+                
+               x = document.getElementById("num").value;
+                
+  if (isNaN(x) || x < 1 || x > 10) {
+                    
+                        text = "Enter Valid input";
+                    }
+                else{
+                    
+                    text="input Ok";
+                }
+                document.getElementById("par").innerHTML = text;
+                
+            }
+        </script>
+    </body></html>
+-->
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <input id="num" type="number" min="10" max="1000" required>
+        <button onclick="myFunction()"> Click Here</button>
+        <p id="par"> Display output here  </p>
+        
+        <script>
+            function myFunction()
+            {
+            var inpObj = document.getElementById("num");
+  if (!inpObj.checkValidity()) {
+                
+                    document.getElementById("par").innerHTML = alert(inpObj.validationMessage);
+                }
+            else{
+                document.getElementById("par").innerHTML = "Input OK"
+                
+            }
+            }
+        
+        </script>
+    
+    </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            
+        var txt = "";
+        var person = {fname:"John",lName:"Doe",age:"25"}
+        var x;
+            
+            for(x in person)
+                {
+                    txt += person[x] + "";
+                }
+            document.getElementById("demo").innerHTML = txt;
+        
+        </script>
+        
+    </body>
+</html>
+
+

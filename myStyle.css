@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://res.cloudinary.com/demo/image/upload/w_200/lady.jpg);
+    background-size: cover;
+    
+/*        background-size: cover; for full screen image*/
+
+/*    background-repeat: no-repeat;*/
+/*  margin: 25px 100px 70px 100px;*/
+/*      margin: top roght left bottom;*/
+
+
+
+
+}
+
+h1{
+    color: brown;
+        text-decoration:none;
+      text-transform: uppercase;
+
+
+}
+p{
+    color: aqua;
+    text-indent: 100px;
+    font-weight: bold;
+}

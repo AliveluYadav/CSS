@@ -1,0 +1,110 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <body>
+    <button id="btn" onclick="pushh()">click here</button>
+    <p id="demo"></p>
+    <p id="demo0"></p>
+    <p id="new">newarray</p>
+        
+
+        <script>
+        var fruitsArry=["Apple","Banana","Mango","Sapota","Grapes"];
+        var dfruitsArry=["1","2","3"];
+
+        var fLength= fruitsArry.length;
+        var text="<ul>";
+        
+        for(var i=0;i<fLength;i++)
+            {
+                text+="<li>"+fruitsArry[i]+"</li>";
+            }
+        text+="</ul>";
+        document.getElementById("demo").innerHTML = fruitsArry;
+        
+        function pushh()
+        {
+          fruitsArry.push("sadasd");
+          dfruitsArry[dfruitsArry.length]="lemon";
+          document.getElementById("demo").innerHTML=fruitsArry;
+          document.getElementById("new").innerHTML=dfruitsArry;
+          document.getElementById("demo0").innerHTML = text;
+
+        }
+   
+        </script> 
+    </body>
+   
+    </html>
+-->
+
+<!--
+
+// To print max number in Array
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <button onclick="myFunc()"> Click here</button>
+        
+        <script>
+        var numm =[1,45,67,1100,34,5];
+        document.getElementById("demo").innerHTML = numm;    
+            
+            function myFunc(arrayy)
+            {
+                 document.getElementById("demo").innerHTML = Math.max.apply(null,numm);    
+//                return Math.max.apply(null,arrayy);
+//                document.getElementById("demo").innerHTML = myFunc(numm);
+            }
+            
+        </script>
+        
+    </body></html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>The highest number is <span id="demo"></span>.</p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+    
+function myArrayMax(arr) {
+  var len = arr.length;
+  var max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
