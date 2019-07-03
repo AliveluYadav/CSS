@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            
+           th {
+                border: 1px solid black;
+            }  
+            div{
+                height: 150px;
+                width: 400px;
+                background-color: aqua;
+                border-collapse: 0px;
+                display: inline-block;
+            }
+        </style>
+        
+        <div>
+          <table id="table" height=100px width=500px>
+            <tr>
+                <td>Name:</td>
+                 <td id="name">Alivelu</td>
+            </tr>
+              <tr>
+                  <td>Role:</td> 
+                  <td id="role">iOS developer</td> 
+
+              </tr>
+              <tr>
+                  <td>Designation:</td>
+                  <td id="dest">trainee Engineer</td>
+
+              </tr>
+            </table>
+            <br>
+        
+            <a id="edit" onclick="editFunction()"><i class="fas fa-edit"></i></a>
+            <a id="save" onclick="save()" style="display: none"><i class="fas fa-save"></i></a>
+            <a id="delete"><i class="fas fa-trash-alt"></i></a>
+
+        </div>
+                
+   
+        <script>
+            
+//            function add(e) {
+//    var obj = {};
+//
+//    $('#addItem input[type="text"]')
+//        .each(function(){obj[this.name] = this.value;});
+//    myItems.push(obj);
+//}
+            
+            function editFunction()
+            {
+                var replaceName = document.getElementById('name').innerHTML;
+                var replaceRole = document.getElementById('role').innerHTML;
+                var replaceDest = document.getElementById('dest').innerHTML;
+
+                document.getElementById("save").style.display='inline-block';
+                document.getElementById('edit').style.display='none';
+                
+                document.getElementById("name").innerHTML = "<input type='text' id='fname' value="+replaceName+">"
+//              document.getElementById("fname").value = replaceName;
+                
+                document.getElementById("role").innerHTML = "<input type='text' id='fRole'>"
+                document.getElementById("fRole").value = replaceRole;
+                
+                document.getElementById("dest").innerHTML = "<input type='text' id='fDest'>"
+                document.getElementById("fDest").value = replaceDest;
+                
+            }
+            
+            function save()
+            {
+                document.getElementById("edit").style.display='inline-block';
+                document.getElementById('save').style.display='none';
+                
+                saveName = document.getElementById("fname").value;
+                saveRole = document.getElementById("fRole").value;
+                saveDest = document.getElementById("fDest").value;
+
+                
+                var testObject = [];
+                var testArry = new Array();
+                  testObject.push({
+                            name: saveName,
+                            Role: saveRole,
+                            Dest: saveDest
+                                     })      
+                testArry.push(testObject);
+                console.log(testArry);
+                
+            }
+
+        </script>
+        
+    </body></html>
+
+

@@ -1,0 +1,130 @@
+<!--
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <style>
+            div{
+                height: 100px;
+                width: 250px;
+                background-color: aqua;
+                padding: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            
+            input{
+              margin-bottom: 10px;
+
+            }
+        </style>
+        <div>
+            <form>
+            Name:<input type="text" value="Alivelu"><br>
+            Role:<input type="text" value="iOS Developer"><br>
+            Designation:<input type="text" value="Trainee Engineer"><br>
+            manager: <input type="text" value="Nirbhay"><br>
+            </form>
+        
+        </div>
+        </body>
+</html>
+-->
+<!--
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            
+           th {
+                border: 1px solid black;
+            }  
+            div{
+                height: 150px;
+                width: 400px;
+                background-color: aqua;
+                border-collapse: 0px;
+                display: inline-block;
+            }
+        </style>
+        
+        <div>
+          <table height=100px width=500px>
+            <tr>
+                <td>Name:</td>
+                 <td id="name">Alivelu</td>
+            </tr>
+              <tr>
+                  <td>Role:</td> 
+                  <td>iOS developer</td> 
+
+              </tr>
+              <tr>
+                  <td>Designation:</td>
+                  <td>trainee Engineer</td>
+
+              </tr>
+            </table>
+            <br>
+        
+            <a id="edit" onclick="editFunction()"><i class="fas fa-edit"></i></a>
+            <a id="save" style="display: none"><i class="fas fa-save"></i></a>
+            <a id="delete"><i class="fas fa-trash-alt"></i></a>
+
+        </div>
+                
+   
+        <script>
+            function editFunction()
+            {
+                document.getElementById("save").style.display='inline-block';
+                document.getElementById('edit').style.display='none';
+                document.getElementById("name").innerHTML = "<input type='text'>"
+                
+                
+                
+            }
+
+        </script>
+        
+    </body></html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+        var obj = {Name:"Alivelu",Role:"iOS Developer",Designation:"Trainee Engineer"}
+        
+        </script>
+        
+        <div id="table">
+    
+            <table>
+                
+           <tr>
+                <td></td>
+                 <td >Alivelu</td>
+            </tr>
+              <tr>
+                  <td>Role:</td> 
+                  <td>iOS developer</td> 
+
+              </tr>
+              <tr>
+                  <td>Designation:</td>
+                  <td>trainee Engineer</td>
+
+              </tr>
+                
+            </table>
+        
+        </div>
+    
+    </body></html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                display: inline-block;
+                margin-right:10px;
+                
+            }
+            table,tr,td{
+                border: 0px solid red;
+                border-collapse: collapse;
+                color: black;
+                background-color: skyblue;
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+         <div height="250px" width="250px" style="background-color:red;margin-right:50px">
+
+        <div  id="divv" width="200px" height="200px"></div>
+        
+         <script>
+                
+            var obj = [{"Name":"Alivelu","Role":"JavaDeveloper","Manager":"Nirbhay"},  
+                      {"Name":"Madhukar","Role":"AngularDeveloper","Manager":"Nirbhay"},{"Name":"Ramarao","Role":"FullStackDeveloper","Manager":"Nirbhay"}]
+            
+          var getDiv = document.getElementById("divv");
+            for(var i=0;i<obj.length;i++)
+                {
+                getDiv.innerHTML += `<table id="table" width="200px" height="200px" style="float:left">
+            <tr>
+                <td>Name:</td>
+                 <td> ${obj[i].Name}</td>
+            </tr>
+              <tr>
+                <td>Role:</td>
+                 <td>${obj[i].Role}</td>
+            </tr>
+              <tr>
+                <td>Manager:</td>
+                 <td>${obj[i].Manager}</td>
+            </tr>
+         </table>`
+                }
+
+        </script>  
+      </div>
+
+    </body>
+</html>
+
